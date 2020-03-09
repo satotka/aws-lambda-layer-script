@@ -1,4 +1,5 @@
 # 
+# Require: docker installed.
 # Require: aws config for publishing lambda layer
 # 
 # 1. in container, pip install python liblary and zip,
@@ -6,6 +7,7 @@
 #
 # Usage: 
 #  ex ```./publish.sh requests-python37 requests 2.22.0 python3.7```
+
 layername=$1 # requests-python37
 lib=$2       # requests
 ver=$3       # 2.23.0
